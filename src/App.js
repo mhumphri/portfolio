@@ -18,7 +18,7 @@ function App() {
           <span className="blue-highlight">jsx</span> This page features
           carrousels and dropdown menus. It is fully responsive and has been
           adapted for both touchscreen and mouse control. Testing has been
-          carried out on firefox, safari, chrome and edge browsers.
+          carried out on firefox, safari and chrome browsers.
         </>,
       ],
       techList: ["javascript", "react", "jsx", "css"],
