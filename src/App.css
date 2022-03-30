@@ -1,0 +1,130 @@
+/* https://dev.to/finnhvman/which-colors-look-good-on-black-and-white-2pe6 */
+.App {
+  min-height: calc(100vh - 40px);
+  position: relative;
+  /* creates space for footer  */
+  padding-bottom: 40px;
+}
+
+.content-wrapper {
+  padding: 0px 8px;
+  max-width: 1280px;
+  margin: auto;
+  height: 100%;
+}
+
+.content-wrapper.items {
+  margin-top: 12px;
+  display: grid;
+  height: auto;
+  grid-template: auto 1fr / repeat(1, 1fr);
+  gap: 12px 12px;
+}
+
+.outer-nav {
+  background-color: black;
+  color: white;
+  height: 32px;
+}
+
+.inner-nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.github-link-wrapper {
+  height: 22px;
+}
+
+.github-img {
+  height: 100%;
+}
+
+.item-box-outer {
+  flex: 1 1 100%;
+}
+
+.item-box {
+  display: inline-block;
+  height: auto;
+  border-top: 1px solid #cc11cc;
+  background-color: white;
+  height: 100%;
+}
+
+/* ratio for image is 1080 x 810 (ipad), scaled to 40% */
+.item-img {
+  width: 100%;
+}
+
+.item-details-wrapper {
+  padding: 0px 4px;
+}
+
+.item-description-wrapper {
+  margin: 12px 0px;
+}
+
+.item-description {
+  margin: 12px 0px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.blue-highlight {
+  color: #4466ff;
+}
+
+.tech-list-wrapper {
+  margin: 12px 0px;
+}
+
+.tech-list {
+  margin: 12px 0px;
+  width: 100%;
+}
+
+.tech-item {
+  display: inline-block;
+  width: 33.3%;
+  margin: 4px 0px;
+  font-size: 14px;
+  color: #0066CC;
+  font-weight: 300;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+
+.footer-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.envelope-svg {
+  margin-right: 4px;
+}
+
+@media screen and (min-width: 640px) {
+  .content-wrapper.items {
+    grid-template: auto 1fr / repeat(2, 1fr);
+  }
+
+  .content-wrapper {
+    padding: 0px 12px;
+  }
+}
